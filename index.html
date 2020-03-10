@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Lightstrip usage</title>
+    <link rel="stylesheet" type="text/css" href="./dist/bundle.css">
+    <script type="module">
+        import VirtualLightstrip, {VirtualLightstripTag, Color} from './dist/virtual-lightstrip.esm.js'
+
+        const lightStrip = document.getElementsByTagName(VirtualLightstripTag)[0];
+        lightStrip.updateLength(12)
+        lightStrip.setPixelColor(0, Color(255,0,0))
+        lightStrip.setPixelColor(1, Color(0,255,0))
+        lightStrip.setPixelColor(2, Color(0,0,255))
+        lightStrip.setPixelColor(3, Color(255,0,0))
+        lightStrip.setPixelColor(4, Color(0,255,0))
+        lightStrip.setPixelColor(5, Color(0,0,255))
+        lightStrip.setPixelColor(6, Color(255,0,0))
+        lightStrip.setPixelColor(7, Color(0,255,0))
+        lightStrip.setPixelColor(8, Color(0,0,255))
+        lightStrip.setPixelColor(9, Color(255,0,0))
+        lightStrip.setPixelColor(10, Color(0,255,0))
+        lightStrip.setPixelColor(11, Color(0,0,255))
+        lightStrip.show();
+
+    </script>
+</head>
+<body>
+<virtual-lightstrip></virtual-lightstrip>
+</body>
+</html>
