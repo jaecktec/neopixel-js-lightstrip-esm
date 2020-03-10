@@ -1,17 +1,15 @@
 import html from 'rollup-plugin-html';
 import scss from 'rollup-plugin-scss'
 import pkg from './package.json';
-import resolve from '@rollup/plugin-node-resolve';
 import {writeFileSync} from 'fs';
 
 export default [
     {
         input: 'src/main.js',
-        external: ['mustache'],
+        external: ['https://unpkg.com/mustache@latest/mustache.mjs'],
         plugins: [
-            resolve(),
             html({
-                include: 'src/*.html'
+                include: '**/*.html'
             }),
             scss({
                 output: true,
