@@ -14,7 +14,7 @@ export default [
             scss({
                 output: true,
                 output: (styles, styleNodes) => {
-                    writeFileSync('dist/bundle.css', styles)
+                    writeFileSync('dist/virtual-lightstrip.css', styles)
                 },
                 failOnError: true,
             })

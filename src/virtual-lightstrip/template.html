@@ -1,3 +1,6 @@
 {{#pixels}}
-<virtual-rgb-led color="{{color}}"></virtual-rgb-led>
+<div style="display: flex; flex-direction: column; text-align: center;">
+    <virtual-rgb-led color="{{color}}"></virtual-rgb-led>
+    <span style="color: white; font-size: x-small; margin-top: 2px">{{index}}</span>
+</div>
 {{/pixels}}

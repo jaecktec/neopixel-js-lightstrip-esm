@@ -1,1 +1,1 @@
-export {default, VirtualLightstripTag, Color} from './virtual-lightstrip/component';
+export {default, VirtualLightstripTag} from './virtual-lightstrip/component';

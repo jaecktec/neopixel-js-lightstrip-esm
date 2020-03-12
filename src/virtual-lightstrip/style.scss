@@ -2,6 +2,10 @@ virtual-lightstrip {
   display: flex;
   flex-direction: row;
   background-color: black;
-  padding: 20px;
+  padding: 5px;
   width: fit-content;
+
+  .lightstrip-item {
+    width: 20px;
+  }
 }
